@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_pic"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/user_dp" />
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_pic"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="User Name"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/userFullName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="User Full Name"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/ffg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userFullName"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/myfollowing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Following: 200"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/myfollowers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/myfollowing"
+            android:text="Followers: 200"
+            android:layout_marginBottom="25dp"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <!--<Button
+        android:id="@+id/my_post"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@id/ffg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/white_button"
+        android:text="My posts"
+        android:textColor="@color/colorPrimary" />-->
+</RelativeLayout>

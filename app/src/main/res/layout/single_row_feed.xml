@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/user_image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/user_dp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/user_image">
+
+            <TextView
+                android:id="@+id/gg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:text="Total likes" />
+
+            <TextView
+                android:id="@+id/user_likes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/gg"
+                android:layout_marginLeft="15dp"
+                android:text="500" />
+        </RelativeLayout>
+        <Button
+
+            android:id="@+id/show_feed_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/round_button"
+            android:text="SHOW LIKERS"
+            android:paddingLeft="7dp"
+            android:paddingRight="7dp"
+            android:textColor="@color/white"
+            />
+    </RelativeLayout>
+</RelativeLayout>

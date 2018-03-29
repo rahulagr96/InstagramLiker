@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/account"
+        android:title="Account settings">
+        <menu>
+
+            <item
+                android:id="@+id/my_post"
+                android:icon="@drawable/mypost"
+                android:title="My Posts" />
+
+            <item
+                android:id="@+id/account_detail"
+                android:icon="@drawable/person2"
+                android:title="Account Details" />
+
+            <item
+                android:id="@+id/log_out"
+                android:icon="@drawable/logout"
+                android:title="Logout" />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/share"
+        android:icon="@drawable/share"
+        android:title="Share" />
+
+    <item
+        android:id="@+id/exit_app"
+        android:icon="@drawable/exit"
+        android:title="Exit" />
+</menu>

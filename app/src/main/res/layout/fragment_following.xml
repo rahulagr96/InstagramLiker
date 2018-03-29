@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="likers.com.instagramliker.fragment.FollowingFragment">
+    <ImageButton
+        android:id="@+id/refesh_following"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_toolbar"
+        android:background="@color/white"
+       android:layout_alignParentRight="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/refresh" />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/refesh_following"
+        android:id="@+id/following_list">
+    </ListView>
+
+</RelativeLayout>

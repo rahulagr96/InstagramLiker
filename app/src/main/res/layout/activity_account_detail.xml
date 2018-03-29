@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="likers.com.instagramliker.activity.AccountDetailActivity">
+
+    <include
+        android:id="@+id/abx"
+        layout="@layout/back_toolbar" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/UserIImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/abx"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:src="@drawable/user_dp" />
+
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/UserIImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="User Name"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/userFullName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="User Full Name"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/ffg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userFullName"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/myfollowing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Following: 200"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/myfollowers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/myfollowing"
+            android:text="Followers: 200"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/my_media_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ffg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="Media Count: 200"
+        android:textColor="@color/black"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/verified"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/my_media_count"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="Verified: false"
+        android:textColor="@color/black"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/ccv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/verified"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/round_button"
+        android:fontFamily="monospace"
+        android:gravity="center_horizontal"
+        android:padding="5dp"
+        android:text="Biography"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/my_bio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ccv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:fontFamily="sans-serif"
+        android:text="Dummy Text"
+        android:textColor="@color/black"
+        android:textSize="17sp" />
+
+    <Button
+        android:id="@+id/loginout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/white_button"
+        android:drawableLeft="@drawable/logout"
+        android:drawablePadding="5dp"
+        android:fontFamily="monospace"
+        android:text="Logout"
+        android:layout_marginBottom="10dp"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+</RelativeLayout>

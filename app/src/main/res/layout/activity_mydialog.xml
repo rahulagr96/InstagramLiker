@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    tools:context="likers.com.instagramliker.activity.Mydialog">
+
+    <ImageView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/image2"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:src="@drawable/user_dp"
+        android:layout_margin="5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image2"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <Button
+            android:id="@+id/save_image"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/round_button"
+            android:text="Save"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/share_image"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/round_button"
+            android:text="Share"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/exit_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/round_button"
+            android:text="Exit"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</RelativeLayout>
